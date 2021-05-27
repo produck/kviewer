@@ -1,0 +1,23 @@
+{
+  "name": "@produck/kviewer-previewer",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Chaos Lee <chaos2lee@qq.com>",
+  "homepage": "https://github.com/produck/kviewer#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/produck/kviewer.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/produck/kviewer/issues"
+  }
+}

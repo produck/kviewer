@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "packages/kviewer-app",
+    "packages/kviewer-app-ui",
+    "packages/kviewer-adaptor",
+    "packages/kviewer-previewer"
+  ],
+  "version": "independent"
+}
