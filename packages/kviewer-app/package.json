@@ -15,7 +15,7 @@
     "url": "git+https://github.com/produck/kviewer.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+		"start": "electron ."
   },
   "bugs": {
     "url": "https://github.com/produck/kviewer/issues"
