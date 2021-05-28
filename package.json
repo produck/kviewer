@@ -1,6 +1,23 @@
 {
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  },
-  "name": "@produck/kviewer"
+	"version": "0.0.0",
+	"build": {
+		"appId": "org.produck.kviewer",
+		"copyright": "Copyright © 2021 Produck",
+		"win": {},
+		"directories": {
+			"app": "app"
+		}
+	},
+	"scripts": {
+		"dev:bootstrap": "lerna bootstrap",
+		"build:pack": "electron-builder --dir",
+		"build:dist": "electron-builder"
+	},
+	"devDependencies": {
+		"electron": "^13.0.1",
+		"electron-builder": "^22.10.5",
+		"glob": "^7.1.7",
+		"lerna": "^4.0.0"
+	},
+	"name": "@produck/kviewer"
 }

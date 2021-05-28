@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron');
-const { default: installExtension, VUEJS_DEVTOOLS } = require('electron-devtools-installer');
+// const { default: installExtension, VUEJS_DEVTOOLS } = require('electron-devtools-installer');
 const path = require('path');
 
 function createWindow() {
@@ -14,13 +14,14 @@ function createWindow() {
 		}
 	})
 
-	win.loadURL('http://localhost:8080/');
+	// win.loadURL('http://localhost:8080/');
+	win.loadFile('index.html');
 	win.webContents.openDevTools();
 }
 
 (async function bootstrap() {
 	await app.whenReady();
-	await installExtension(VUEJS_DEVTOOLS);
+	// await installExtension(VUEJS_DEVTOOLS);
 
 	createWindow();
 }());
