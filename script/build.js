@@ -34,9 +34,20 @@ const WINDOW_NAMESPACE_DIRECTORY = path.join(ASSEMBLY_DIRECTORY, '_windows');
 	/**
 	 * Moving main process resource into `/app`.
 	 */
+	const appPathname = path.join(__dirname, '../packages/kviewer-app');
+
+	await fs.rename(
+		path.join(appPathname, 'dist/index.js'),
+		path.join(ASSEMBLY_DIRECTORY, 'index.js')
+	);
+
+	await fs.copyFile(
+		path.join(appPathname, 'package.json'),
+		path.join(ASSEMBLY_DIRECTORY, 'package.json'),
+	);
 
 	/**
 	 * Running electron-builder
 	 */
-	// await build();
+	await build();
 }());

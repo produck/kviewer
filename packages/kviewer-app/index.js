@@ -15,7 +15,7 @@ function createWindow() {
 	})
 
 	// win.loadURL('http://localhost:8080/');
-	win.loadFile('index.html');
+	win.loadFile('_windows/main/index.html');
 	win.webContents.openDevTools();
 }
 

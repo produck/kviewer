@@ -12,13 +12,17 @@
     "url": "git+https://github.com/produck/kviewer.git"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "webpack --config build/webpack.prod.js"
   },
   "bugs": {
     "url": "https://github.com/produck/kviewer/issues"
   },
   "devDependencies": {
     "electron": "^13.0.1",
-    "electron-devtools-installer": "^3.2.0"
+    "electron-devtools-installer": "^3.2.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.3"
   }
 }

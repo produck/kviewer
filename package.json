@@ -3,15 +3,18 @@
 	"build": {
 		"appId": "org.produck.kviewer",
 		"copyright": "Copyright © 2021 Produck",
-		"win": {},
+		"win": {
+			"target": "dir"
+		},
 		"directories": {
 			"app": "app"
 		}
 	},
 	"scripts": {
 		"dev:bootstrap": "lerna bootstrap",
+		"build:module": "lerna run build",
 		"build:pack": "electron-builder --dir",
-		"build:dist": "electron-builder"
+		"build:dist": "npm run build:module && node script/build"
 	},
 	"devDependencies": {
 		"electron": "^13.0.1",
