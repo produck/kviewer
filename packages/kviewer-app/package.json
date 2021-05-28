@@ -15,12 +15,13 @@
     "url": "git+https://github.com/produck/kviewer.git"
   },
   "scripts": {
-		"start": "electron ."
+    "start": "electron ."
   },
   "bugs": {
     "url": "https://github.com/produck/kviewer/issues"
   },
   "devDependencies": {
-    "electron": "^13.0.1"
+    "electron": "^13.0.1",
+    "electron-devtools-installer": "^3.2.0"
   }
 }

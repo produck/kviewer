@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const { default: installExtension, VUEJS_DEVTOOLS } = require('electron-devtools-installer');
 const path = require('path');
 
 function createWindow() {
@@ -19,6 +20,7 @@ function createWindow() {
 
 (async function bootstrap() {
 	await app.whenReady();
+	await installExtension(VUEJS_DEVTOOLS);
 
 	createWindow();
 }());
